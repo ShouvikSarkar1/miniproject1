@@ -142,6 +142,16 @@ body {
 .sidebar-bottom {
   padding-bottom: 10px;
 }
+.searchContainer {
+  display: none;
+  margin-top: 10px;
+}
+#searchInput {
+  padding: 8px;
+  width: 390px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
 .footer {
   background-color: #225777;
