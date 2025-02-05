@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex-grow: 1;
+}
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #225777;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    padding: 15px 50px;
+    width: 100%;
+    flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+}
+
+/* Logo on the left */
+.header-logo img {
+    height: 10rem;
+    max-width: 100%;
+}
+
+/* Title in the center */
+.title  {
+    flex-grow: 1;  /* Allows title to take available space */
+    text-align: center;
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Login on the right */
+.header-login {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Login Form */
+.login {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px ;
+    border-radius: 10px;
+}
+
+.login-input {
+    display: flex;
+    gap: 10px;
+}
+
+.login-input input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    padding: 8px 12px !important;
+    background-color: #ff7b00 !important;
+    color: antiquewhite !important;
+    border: none !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    font-size: 1rem !important;
+}
+.btn:hover{
+    background-color: #ff7b0093 !important;
+}
+.main {
+    background-color: antiquewhite;
+}
+
+.container {
+    background-color: rgba(212, 188, 156, 0.849);
+    padding: 20px;
+    border: solid #225777 2px;
+    border-radius: 10px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+/* Form Styling */
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centering inputs */
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container input {
+    width: 500px; /* Adjust width as needed */
+    padding: 10px;
+    border-radius: 5px;
+    border: solid #225777 2px;
+}
+
+.form-container button {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff7b00 !important;
+    color: antiquewhite;
+    margin: 10px auto 0 auto; 
+    display: block; 
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+a {
+    color: #007bff;
+    cursor: pointer;
+}
+.footer {
+    background-color: #225777;
+    color: antiquewhite;
+    text-align: center;
+    padding: 5px;
+    width: 100%;;
+}
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 5rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 4rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .header-login {
+        margin-top: 10px;
+    }
+    .container {
+        margin-top: 80px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .header-logo img {
+        height: 6rem;
+    }
+    .login {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .login-input {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .container {
+        width: 90%;
+        margin-top: 50px;
+    }
+    .form-container input {
+        max-width: 100%;
+    }
+    .form-container button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .header-logo img {
+        height: 5rem;
+    }
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    .form-container input, .form-container button {
+        width: 100%;
+    }
+}
