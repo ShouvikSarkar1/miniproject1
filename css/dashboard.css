@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -11,10 +11,10 @@ body {
 }
 .main {
     display:flex;
-    flex-grow: 1; /* Takes up remaining space */
-    padding: 20px;
+    flex-grow: 1; 
+    padding: 20px !important;
     background: #f4f4f4;
-
+    gap: 10px;
     grid-template-areas: 
     "header header"
     "sidebar main"
@@ -33,7 +33,7 @@ body {
   background-color: #225777;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: antiquewhite;
-  padding: 15px 50px;
+  padding: 15px 50px !important;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -63,7 +63,7 @@ body {
 .login {
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 10px;
+  padding: 10px !important;
   border-radius: 10px;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .login-input input {
-  padding: 8px;
+  padding: 8px !important;
   border-radius: 5px;
   border: none;
 }
@@ -94,14 +94,14 @@ body {
 /* Layout Wrapper */
 .wrapper {
   display: flex;
-  flex: 1; /* Takes up remaining space */
+  flex: 0; /* Takes up remaining space */
 }
 
 .sidebar {
     width: 250px; /* Adjust width as needed */
     background: #225677bd; /* Sidebar background color */
     color: antiquewhite;
-    padding: 20px;
+    padding: 20px !important;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -112,7 +112,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 15px 20px;
+  padding: 15px 20px !important;
   text-decoration: none;
   color: antiquewhite;
   font-size: 18px;
@@ -147,7 +147,7 @@ body {
   margin-top: 10px;
 }
 #searchInput {
-  padding: 8px;
+  padding: 8px !important;
   width: 390px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -159,15 +159,18 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.card-content{
+#eventsContainer {
   display: flex;
-  justify-content: space-between;
-  gap:10px;
-  padding: 10px;
-  flex-direction: wrap;
+  padding: 5px;
+  gap: 5px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-.card-body{
-  text-align: left;
+.card {
+  border: 1px solid #225777 !important;
+  padding: 5px !important;
+  
 }
 .footer {
   background-color: #225777;
