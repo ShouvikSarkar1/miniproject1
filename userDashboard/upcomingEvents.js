@@ -6,7 +6,7 @@ const events = [
     location: "The Boathouse Rocketts Landing Richmond, VA",
     date: "11/01/2025",
     time: "04:30PM EST",
-    image: 'images/ED3A9021.jpg'
+    image: '../images/ED3A9021.jpg'
   },
   {
     id: 2,
