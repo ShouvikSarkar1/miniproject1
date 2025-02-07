@@ -199,3 +199,48 @@ body {
   padding: 5px;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .sidebar a {
+    padding: 10px;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-logo img {
+    height: 4rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .login-input input {
+    width: 100px;
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
+  .sidebar {
+    flex-direction: column;
+  }
+}
